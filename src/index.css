@@ -1,13 +1,258 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/index.css */
+
+/* === 1. Tailwind Directives === */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* === 2. Global Styles & Resets === */
+
+html, body {
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  @apply font-sans transition-all duration-300;
+  -ms-overflow-style: none;  /* IE and Edge scrollbar hide */
+  scrollbar-width: none;     /* Firefox scrollbar hide */
+}
+body::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera scrollbar hide */
+}
+
+
+/* === 3. Main Animation Class for Header === */
+
+/* 
+  This is the combined class for your header. 
+  Apply this to your <h1> tag: className="... typewriter-glow"
+*/
+.typewriter-glow {
+  /* Properties from the glowing outline effect */
+  color: #60a5fa; /*Tailwind's blue-400 for the text fill*/
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0a2540; /* The dark outline */
+
+  /* Properties from the typewriter effect */
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  /* letter-spacing: .10em; */
+  border-right: .15em solid var(--primary-color, #60a5fa); /* The blinking cursor */
+
+  /* Combined animations, separated by commas */
+  animation: 
+    typing-deleting 9s steps(14, end) infinite,
+    blink-caret 0.75s step-end infinite,
+    text-glow-pulse 3s ease-in-out infinite;
+}
+
+
+/* === 4. Custom Component Styles === */
+
+.header {
+  @apply bg-indigo-400 text-white py-10 text-center shadow-md dark:bg-indigo-800;
+}
+
+.section {
+  @apply py-10 px-8 text-center text-gray-900 bg-transparent dark:text-white;
+}
+
+.section-title {
+  @apply text-2xl font-bold mb-4;
+}
+
+.section-text {
+  @apply max-w-2xl mx-auto text-lg;
+}
+
+/* --- Project Styles --- */
+.project-grid {
+  @apply grid gap-6 md:grid-cols-2;
+}
+
+.project-card {
+  @apply bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-xl transition;
+  border: 3px solid #93c5fd; /* Tailwind blue-300 */
+  box-shadow: 0 0 15px rgba(147, 197, 253, 0.5), 0 0 30px rgba(147, 197, 253, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.project-card:hover {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.8), 0 0 40px rgba(99, 102, 241, 0.5), 0 0 60px rgba(99, 102, 241, 0.3);
+}
+.project-title { @apply text-xl font-semibold; }
+.project-desc { @apply text-sm text-gray-600 dark:text-gray-300 mt-2; }
+.project-link { @apply text-blue-500 underline mt-3 inline-block; }
+
+/* --- About Section Styles --- */
+.about-section {
+  padding: 3rem 1.5rem;
+  color: #1a202c;
+}
+.dark .about-section { color: white; }
+.about-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 2.5rem; }
+@media (min-width: 768px) { .about-container { flex-direction: row; justify-content: space-between; align-items: center; } }
+.about-text-box { width: 100%; max-width: 600px; }
+.about-heading { font-size: 2.5rem; font-weight: 800; color: #4f46e5; margin-bottom: 1.5rem; }
+.dark .about-heading { color: #a5b4fc; }
+.about-description { font-size: 1.125rem; line-height: 1.8; color: #374151; }
+.dark .about-description { color: #d1d5db; }
+.about-photo-box { width: 100%; max-width: 500px; display: flex; justify-content: center; }
+.about-photo {
+  border-radius: 1rem; object-fit: cover; width: 25rem; height: 28rem; border: 4px solid #c7d2fe;
+  box-shadow: 0 0 25px rgba(30, 64, 175, 0.6), 0 0 50px rgba(30, 64, 175, 0.4), 0 0 75px rgba(30, 64, 175, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.dark .about-photo {
+  border-color: #6366f1;
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.8), 0 0 60px rgba(99, 102, 241, 0.5), 0 0 90px rgba(99, 102, 241, 0.3);
+}
+
+/* --- Achievements & Skills Styles --- */
+.achievement-grid { @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3; }
+.achievement-card {
+  @apply bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-xl transition;
+  border: 3px solid #93c5fd;
+  box-shadow: 0 0 15px rgba(147, 197, 253, 0.5), 0 0 30px rgba(147, 197, 253, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.achievement-card:hover {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.8), 0 0 40px rgba(99, 102, 241, 0.5), 0 0 60px rgba(99, 102, 241, 0.3);
+}
+.achievement-image { @apply w-full max-h-[300px] object-contain rounded; }
+.achievement-title { @apply mt-4 text-lg font-semibold; }
+.achievement-desc { @apply text-sm text-gray-600 dark:text-gray-300 mt-1; }
+.skill-card {
+  @apply bg-white dark:bg-gray-800 p-4 rounded-lg shadow hover:shadow-xl text-center text-gray-800 dark:text-white transition;
+  border: 3px solid #93c5fd;
+  box-shadow: 0 0 15px rgba(147, 197, 253, 0.5), 0 0 30px rgba(147, 197, 253, 0.3);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s;
+}
+.skill-card:hover {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.8), 0 0 40px rgba(99, 102, 241, 0.5), 0 0 60px rgba(99, 102, 241, 0.3);
+  transform: scale(1.05);
+}
+
+/* --- Other Glow Styles --- */
+.glow-line {
+  background: linear-gradient(to right, #6366f1, #9333ea, #6366f1);
+  box-shadow: 0 0 6px #6366f1, 0 0 12px #6366f1, 0 0 18px #9333ea;
+  border-radius: 9999px;
+}
+.glow-link {
+  transition: all 0.3s ease; color: inherit;
+  text-shadow: 0 0 5px rgba(99, 102, 241, 0.4);
+}
+.glow-link:hover {
+  color: #6366f1;
+  text-shadow: 0 0 5px #6366f1, 0 0 10px #6366f1, 0 0 15px #6366f1;
+}
+.glow-card {
+  border: 2px solid #60a5fa;
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.6), 0 0 20px rgba(96, 165, 250, 0.4), 0 0 30px rgba(96, 165, 250, 0.2);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s;
+}
+.nav-glow {
+  border: 2px solid #60a5fa;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.6), 0 0 16px rgba(96, 165, 250, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s;
+}
+.nav-glow:hover {
+  box-shadow: 0 0 12px rgba(96, 165, 250, 0.8), 0 0 24px rgba(96, 165, 250, 0.4);
+  transform: scale(1.05);
+}
+
+
+/* === 5. Animation Keyframes === */
+
+/* Keyframes for the .typewriter-glow class */
+@keyframes typing-deleting {
+  0%, 100% { width: 0; }
+  50%, 90% { width: 14ch; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--primary-color, #60a5fa); }
+}
+@keyframes text-glow-pulse {
+  0%, 100% { text-shadow: 0 0 5px #60a5fa, 0 0 10px #60a5fa, 0 0 15px #0a2540; }
+  50% { text-shadow: 0 0 10px #81c3fd, 0 0 20px #81c3fd, 0 0 30px #0a2540; }
+}
+
+/* Other keyframes used in your project */
+@keyframes slideIn {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes fadeSlideIn {
+  0% { opacity: 0; transform: translateY(60px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(0, 200, 255, 0.6); }
+  50% { box-shadow: 0 0 30px rgba(0, 200, 255, 1); }
+}
+@keyframes text-gradient-animation {
+  to { background-position: -200% center; }
+}
+
+
+/* === 6. Tailwind @layer Utilities === */
+/* All utility classes are grouped here for organization */
+
+@layer utilities {
+  /* Reusable class to hide scrollbars */
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Gradient text animation */
+  .animate-text-gradient {
+    background-image: linear-gradient(to right, #4f46e5 20%, #a855f7 40%, #4f46e5 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: text-gradient-animation 4s linear infinite;
+  }
+
+  /* Simple animation classes */
+  .about-intro-animate { animation: slideIn 1s ease-in-out forwards; }
+  .project-animate { animation: fadeSlideIn 1s ease-in-out forwards; }
+  .glow-animate { animation: glowPulse 2s ease-in-out infinite; }
+  
+  /* Achievement scroll wrapper styles */
+.achievement-scroll-wrapper {
+  @apply relative w-full flex overflow-x-auto snap-x snap-mandatory gap-4 p-2;
+}
+  .achievement-scroll {
+    @apply flex gap-4 p-2;
+    scroll-behavior: smooth;
+  }
+  
+  /* Flipping card styles */
+  .card-wrapper {
+    @apply flex-shrink-0 min-w-[350px] relative;
+    width: 350px; height: 450px; perspective: 1000px;
+    border: 2px solid #93c5fd;
+    box-shadow: 0 0 10px rgba(147, 197, 253, 0.4), 0 0 20px rgba(147, 197, 253, 0.3), 0 0 40px rgba(147, 197, 253, 0.2);
+    transition: box-shadow 0.4s ease;
+  }
+  .card-wrapper:hover {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.7), 0 0 30px rgba(99, 102, 241, 0.5), 0 0 60px rgba(99, 102, 241, 0.3);
+  }
+  .card { @apply w-full h-full relative; }
+  .card-inner, .card-back { @apply absolute w-full h-full p-2 rounded-lg; backface-visibility: hidden; }
+  .card-back { transform: rotateY(180deg); }
+  .achievement-image, .certificate-back-image { @apply w-full h-full object-contain rounded; }
+  
+  /* Modal styles */
+  .modal-overlay { @apply fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50; }
+  .modal-content { @apply relative bg-white dark:bg-gray-800 p-4 rounded-lg max-w-3xl w-full; }
+  .modal-img { @apply w-full max-h-[80vh] object-contain rounded; }
+  .modal-close {
+    @apply absolute top-2 right-3 text-xl font-bold text-gray-700 dark:text-white hover:text-red-500;
+    background: none; border: none; cursor: pointer;
+  }
 }
