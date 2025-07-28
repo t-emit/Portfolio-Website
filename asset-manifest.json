@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9c389dc4.css",
-    "main.js": "/static/js/main.c4260c7c.js",
+    "main.js": "/static/js/main.aa26252e.js",
     "static/media/Pub_cert1.Png": "/static/media/Pub_cert1.03992b0a29faa456cc20.Png",
     "static/media/Screenshot 2025-07-28 120049.png": "/static/media/Screenshot 2025-07-28 120049.1ce4b2bfb33c0e0d113f.png",
     "static/media/Screenshot 2025-07-28 120030.png": "/static/media/Screenshot 2025-07-28 120030.37093bf6980be9570653.png",
@@ -16,10 +16,10 @@
     "static/media/Talat node js badge.png": "/static/media/Talat node js badge.d14858ee793ac4941f05.png",
     "index.html": "/index.html",
     "main.9c389dc4.css.map": "/static/css/main.9c389dc4.css.map",
-    "main.c4260c7c.js.map": "/static/js/main.c4260c7c.js.map"
+    "main.aa26252e.js.map": "/static/js/main.aa26252e.js.map"
   },
   "entrypoints": [
     "static/css/main.9c389dc4.css",
-    "static/js/main.c4260c7c.js"
+    "static/js/main.aa26252e.js"
   ]
 }
