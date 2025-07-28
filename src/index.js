@@ -1,16 +1,14 @@
-// src/main.jsx (or index.js)
-
+// src/index.js - THE CORRECT STATE
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App'; // Your MainApp.jsx
 import './index.css';
+import App from './App';
 
+// NO <BrowserRouter> HERE!
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    {/* Wrap your App component */}
-    
-      <App />
-    
+    <App /> 
   </React.StrictMode>
 );
