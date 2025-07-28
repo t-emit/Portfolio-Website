@@ -1,7 +1,7 @@
 // src/App.jsx (or MainApp.jsx)
 
 import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // Import Layout and Page components
 import SharedLayout from './SharedLayout'; // <-- NEW
@@ -31,7 +31,6 @@ function MainApp() {
       {darkMode && <DBackground />}
       
       {/* This routing structure ensures the Navbar is always present */}
-      <BrowserRouter basename="/Portfolio-Website">
       <Routes>
         <Route 
           path="/" 
@@ -44,7 +43,6 @@ function MainApp() {
           <Route path="projects" element={<AllProjectsPage />} />
         </Route>
       </Routes>
-      </BrowserRouter>
     </div>
   );
 }
