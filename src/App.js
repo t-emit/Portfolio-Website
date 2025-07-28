@@ -8,7 +8,7 @@ function App() {
 
   return (
     
-    <BrowserRouter basename="/Portfolio-Website">
+    <BrowserRouter >
       {!entered ? (
         <LandingPage onEnter={() => setEntered(true)} />
       ) : (
