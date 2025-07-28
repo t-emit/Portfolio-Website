@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website/static/css/main.9c389dc4.css",
-    "main.js": "/Portfolio-Website/static/js/main.56a986c0.js",
-    "static/media/Pub_cert1.Png": "/Portfolio-Website/static/media/Pub_cert1.03992b0a29faa456cc20.Png",
-    "static/media/Screenshot 2025-07-28 120049.png": "/Portfolio-Website/static/media/Screenshot 2025-07-28 120049.1ce4b2bfb33c0e0d113f.png",
-    "static/media/Screenshot 2025-07-28 120030.png": "/Portfolio-Website/static/media/Screenshot 2025-07-28 120030.37093bf6980be9570653.png",
-    "static/media/Screenshot 2025-07-28 120106.png": "/Portfolio-Website/static/media/Screenshot 2025-07-28 120106.00c05b414eeb4e5c2db4.png",
-    "static/media/Screenshot 2025-07-28 115954.png": "/Portfolio-Website/static/media/Screenshot 2025-07-28 115954.a1f2d0dc7609f65df4b5.png",
-    "static/media/bits.jpg": "/Portfolio-Website/static/media/bits.dbfb50ea76e77affc06c.jpg",
-    "static/media/Node js cert talat greatlearning.png": "/Portfolio-Website/static/media/Node js cert talat greatlearning.2476d570774f559e4835.png",
-    "static/media/TS-Resume.pdf": "/Portfolio-Website/static/media/TS-Resume.dcc19c69843b5358f686.pdf",
-    "static/media/R-pre.png": "/Portfolio-Website/static/media/R-pre.4fa5cb0e0572a7c84f53.png",
-    "static/media/me.jpeg": "/Portfolio-Website/static/media/me.734f56729031676b8ee6.jpeg",
-    "static/media/bg-light.jpg": "/Portfolio-Website/static/media/bg-light.73952841f3780faf7e0f.jpg",
-    "static/media/Talat node js badge.png": "/Portfolio-Website/static/media/Talat node js badge.d14858ee793ac4941f05.png",
-    "index.html": "/Portfolio-Website/index.html",
-    "main.9c389dc4.css.map": "/Portfolio-Website/static/css/main.9c389dc4.css.map",
-    "main.56a986c0.js.map": "/Portfolio-Website/static/js/main.56a986c0.js.map"
+    "main.css": "/static/css/main.9c389dc4.css",
+    "main.js": "/static/js/main.c4260c7c.js",
+    "static/media/Pub_cert1.Png": "/static/media/Pub_cert1.03992b0a29faa456cc20.Png",
+    "static/media/Screenshot 2025-07-28 120049.png": "/static/media/Screenshot 2025-07-28 120049.1ce4b2bfb33c0e0d113f.png",
+    "static/media/Screenshot 2025-07-28 120030.png": "/static/media/Screenshot 2025-07-28 120030.37093bf6980be9570653.png",
+    "static/media/Screenshot 2025-07-28 120106.png": "/static/media/Screenshot 2025-07-28 120106.00c05b414eeb4e5c2db4.png",
+    "static/media/Screenshot 2025-07-28 115954.png": "/static/media/Screenshot 2025-07-28 115954.a1f2d0dc7609f65df4b5.png",
+    "static/media/bits.jpg": "/static/media/bits.dbfb50ea76e77affc06c.jpg",
+    "static/media/Node js cert talat greatlearning.png": "/static/media/Node js cert talat greatlearning.2476d570774f559e4835.png",
+    "static/media/TS-Resume.pdf": "/static/media/TS-Resume.dcc19c69843b5358f686.pdf",
+    "static/media/R-pre.png": "/static/media/R-pre.4fa5cb0e0572a7c84f53.png",
+    "static/media/me.jpeg": "/static/media/me.734f56729031676b8ee6.jpeg",
+    "static/media/bg-light.jpg": "/static/media/bg-light.73952841f3780faf7e0f.jpg",
+    "static/media/Talat node js badge.png": "/static/media/Talat node js badge.d14858ee793ac4941f05.png",
+    "index.html": "/index.html",
+    "main.9c389dc4.css.map": "/static/css/main.9c389dc4.css.map",
+    "main.c4260c7c.js.map": "/static/js/main.c4260c7c.js.map"
   },
   "entrypoints": [
     "static/css/main.9c389dc4.css",
-    "static/js/main.56a986c0.js"
+    "static/js/main.c4260c7c.js"
   ]
 }
