@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c389dc4.css",
-    "main.js": "/static/js/main.aa26252e.js",
+    "main.css": "/static/css/main.39e1ef48.css",
+    "main.js": "/static/js/main.22ad216a.js",
     "static/media/Pub_cert1.Png": "/static/media/Pub_cert1.03992b0a29faa456cc20.Png",
     "static/media/Screenshot 2025-07-28 120049.png": "/static/media/Screenshot 2025-07-28 120049.1ce4b2bfb33c0e0d113f.png",
     "static/media/Screenshot 2025-07-28 120030.png": "/static/media/Screenshot 2025-07-28 120030.37093bf6980be9570653.png",
@@ -15,11 +15,11 @@
     "static/media/bg-light.jpg": "/static/media/bg-light.73952841f3780faf7e0f.jpg",
     "static/media/Talat node js badge.png": "/static/media/Talat node js badge.d14858ee793ac4941f05.png",
     "index.html": "/index.html",
-    "main.9c389dc4.css.map": "/static/css/main.9c389dc4.css.map",
-    "main.aa26252e.js.map": "/static/js/main.aa26252e.js.map"
+    "main.39e1ef48.css.map": "/static/css/main.39e1ef48.css.map",
+    "main.22ad216a.js.map": "/static/js/main.22ad216a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c389dc4.css",
-    "static/js/main.aa26252e.js"
+    "static/css/main.39e1ef48.css",
+    "static/js/main.22ad216a.js"
   ]
 }
