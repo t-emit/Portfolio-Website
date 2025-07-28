@@ -11,12 +11,12 @@ export default function SharedLayout({ darkMode, setDarkMode }) {
       <div className="sticky top-0 z-50 p-4 flex justify-between items-center shadow bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
         {/* Navigation Links */}
         <nav className="flex flex-wrap gap-4">
-          <a href="/#about" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">About Me</a>
-          <a href="/#projects" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">Projects</a>
-          <a href="/#achievements" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">Achievements</a>
-          <a href="/#Skills" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">Skills</a>
-          <a href="/#resume" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">Resume</a>
-          <a href="#contact" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">Contact</a>
+          <a href="/About" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">About Me</a>
+          <a href="/AllPprojectsPage" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">Projects</a>
+          <a href="/Achievements" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">Achievements</a>
+          <a href="/skill" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">Skills</a>
+          <a href="/Resume" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">Resume</a>
+          <a href="/Contact" className="nav-glow px-4 py-2 rounded-lg text-sm font-medium dark:text-white text-gray-800 dark:border-transparent dark:shadow-none dark:hover:bg-gray-700">Contact</a>
         </nav>
 
         {/* Dark Mode Toggle Button */}
