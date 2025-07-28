@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Website/static/css/main.39e1ef48.css",
-    "main.js": "/Portfolio-Website/static/js/main.759e83b3.js",
+    "main.js": "/Portfolio-Website/static/js/main.74c41cfe.js",
     "static/media/Pub_cert1.Png": "/Portfolio-Website/static/media/Pub_cert1.03992b0a29faa456cc20.Png",
     "static/media/Screenshot 2025-07-28 120049.png": "/Portfolio-Website/static/media/Screenshot 2025-07-28 120049.1ce4b2bfb33c0e0d113f.png",
     "static/media/Screenshot 2025-07-28 120030.png": "/Portfolio-Website/static/media/Screenshot 2025-07-28 120030.37093bf6980be9570653.png",
@@ -16,10 +16,10 @@
     "static/media/Talat node js badge.png": "/Portfolio-Website/static/media/Talat node js badge.d14858ee793ac4941f05.png",
     "index.html": "/Portfolio-Website/index.html",
     "main.39e1ef48.css.map": "/Portfolio-Website/static/css/main.39e1ef48.css.map",
-    "main.759e83b3.js.map": "/Portfolio-Website/static/js/main.759e83b3.js.map"
+    "main.74c41cfe.js.map": "/Portfolio-Website/static/js/main.74c41cfe.js.map"
   },
   "entrypoints": [
     "static/css/main.39e1ef48.css",
-    "static/js/main.759e83b3.js"
+    "static/js/main.74c41cfe.js"
   ]
 }
