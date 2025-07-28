@@ -33,10 +33,24 @@ export const projects = [
   {
     title: "Movies Recommendation App",
     description: "A personalized movie discovery and recommendation web application",
-    liveLink: "#",
+    // liveLink: "#",
     repoLink: "https://github.com/t-emit/movie-recommendation-app",
     tags: ["React", "Node.js", "MongoDB", "Full Stack","RestfulAPI"]
   },
+    {
+    title: "Hackathon Website",
+    description: "HackHub is a comprehensive platform designed to streamline the organization and participation of college-levelhackathons",
+    liveLink: "https://hackhub-mzj8.onrender.com/hackathon",
+    repoLink: "https://github.com/rasikarakhewar3010/HackHub",
+    tags: ["HTML", "JS", "CSS", "Node.js", "MongoDB", "Full Stack"]
+  },
+   {
+    title: "BloomSkin:SKin ANalyzer",
+    description: "BloomSkin is an AI powered platform which analyses the acne on the face",
+    // liveLink: "https://hackhub-mzj8.onrender.com/hackathon",
+    repoLink: " https://github.com/rasikarakhewar3010/Bloom-Skin",
+    tags: ["React","Python", "Machine Learning","MongoDB", "Full Stack"]
+  }
   
   // {
   //   title: "E-commerce Backend",
