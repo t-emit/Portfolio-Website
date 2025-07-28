@@ -26,7 +26,7 @@ export const projects = [
   {
     title: "Portfolio Website",
     description: "This personal portfolio, built with React, Tailwind CSS, and Framer Motion.",
-    liveLink: "#",
+    liveLink: "https://t-emit.github.io/Portfolio-Website",
     repoLink: "https://github.com/t-emit/Portfolio-Website",
     tags: ["React", "Tailwind CSS"]
   },
