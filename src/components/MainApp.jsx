@@ -13,7 +13,7 @@ import Background from './Background';
 import DBackground from './DBackground';
 // import './index.css';
 
-function App() {
+function MainApp() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -49,4 +49,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainApp;
