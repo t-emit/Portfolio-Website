@@ -45,7 +45,7 @@ export const projects = [
     tags: ["HTML", "JS", "CSS", "Node.js", "MongoDB", "Full Stack"]
   },
    {
-    title: "BloomSkin:SKin ANalyzer",
+    title: "BloomSkin : Skin Analyzer",
     description: "BloomSkin is an AI powered platform which analyses the acne on the face",
     // liveLink: "https://hackhub-mzj8.onrender.com/hackathon",
     repoLink: " https://github.com/rasikarakhewar3010/Bloom-Skin",
