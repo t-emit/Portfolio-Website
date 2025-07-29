@@ -33,7 +33,7 @@ export const projects = [
   {
     title: "Movies Recommendation App",
     description: "A personalized movie discovery and recommendation web application",
-    // liveLink: "#",
+    liveLink: "https://movie-recommendation-app-sage.vercel.app/",
     repoLink: "https://github.com/t-emit/movie-recommendation-app",
     tags: ["React", "Node.js", "MongoDB", "Full Stack","RestfulAPI"]
   },
